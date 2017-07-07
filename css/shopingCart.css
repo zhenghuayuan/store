@@ -1,0 +1,101 @@
+html,body {background-color: #fbfbfb; color: #333333;font-size:12px}
+.wrap_center {width: 1190px; margin: 0 auto; background-color: #fff;}
+.bg_red {background-color: #e31939 !important;}
+.red {color: #e31939 !important;}
+.bgc_none {background: none !important;}
+.hidden {visibility: hidden !important;}
+
+/**/
+.header_wrap {height: 98px; border-bottom: 1px solid #ddd; background-color: #fff;}
+.header_logo {float: left; width: 221px; height: 80px; margin-top: 9px; background-color: red;}
+.header_progress {float: right; width: 480px; padding-top: 34px;}
+.header_progress {}
+.header_progress .progress {position: relative; width: 414px; margin: 0 auto 20px; height: 3px; background-color: #ddd;}
+.header_progress .progress span {position: absolute; z-index: 1; width: 26px; height: 26px; top: 50%; margin-top: -13px; border-radius: 50%; background-color: #ddd; text-align: center; line-height: 26px; color: #fff;}
+.header_progress .progress span:nth-child(1) {left: -26px;}
+.header_progress .progress span:nth-child(2) {left: 50%; margin-left: -13px;}
+.header_progress .progress span:nth-child(3) {right: -26px; background: #ddd url(../images/icon_success.png) no-repeat center;}
+.header_progress .progress i {position: absolute; height: 100%; background-color: #e31939;}
+.header_progress ul li {float: left; width: 33.3%;}
+
+
+/**/
+/*选择状态*/
+.check_default {background: url(../images/icon-nocheck.png) no-repeat 14px center;} 
+.check_active {background: url(../images/icon-check.png) no-repeat 14px center !important;}
+
+.shopcart_name {height: 62px; line-height: 62px; color: #333; font-size: 16px; text-indent: 30px; background: #fbfbfb url(../images/icon_shopcart_name.png) no-repeat 2px 18px;}
+.shopcart_wrap {width: 1122px; margin: 0 auto;}
+.shopcart_tit {}
+.shopcart_tit div {float: left; height: 70px; line-height: 70px; text-align: center;}
+.shopcart_tit .td_chk {width: 110px; background: url(../images/icon-nocheck.png) no-repeat 14px center;}
+.shopcart_tit .td_gds {width: 400px;}
+.shopcart_tit .td_info {width: 140px;}
+.shopcart_tit .td_prc {width: 100px;}
+.shopcart_tit .td_num {width: 100px;}
+.shopcart_tit .td_sum {width: 150px;}
+.shopcart_tit .td_opt {width: 122px; }
+
+.shopcart_content {}
+.store_wrap {}
+.store_name {text-indent: 42px; height: 70px; line-height: 70px; border-top: 1px solid #ddd;}
+.store_goods {height: 118px; border-top: 1px solid #ddd;}
+.store_goods div {float: left; height: 100%; line-height: 118px; text-align: center;}
+.store_goods .td_chk {width: 60px; height: 100%; text-align: center;}
+.store_goods .td_pic {width: 80px;}
+.store_goods .td_pic img {width: 80px; height: 80px; margin-top: 19px;}
+.store_goods .td_name {width: 370px; text-indent: 20px;}
+.store_goods .td_info {width: 140px;}
+.store_goods .td_prc {width: 100px;}
+.store_goods .td_num {width: 100px;}
+.store_goods .td_sum {width: 150px;}
+.store_goods .td_opt {width: 122px; cursor: pointer;}
+.store_wrap .tipls {padding: 20px; background-color: #eeeeee; line-height: 28px;}
+.store_wrap .tipls .left {float: left; width: 80px;} 
+.store_wrap .tipls .right {float: left; width: 1002px;}
+
+.shopcart_bottom {margin: 28px 0 34px; border-top: 1px solid #ddd;}
+.shopcart_bottom div {float: left; height: 44px; line-height: 44px; text-align: center;}
+.shopcart_bottom .td_chk {width: 110px; text-align: center; text-align: center;}
+.shopcart_bottom .td_confirm {margin-left: 10px; width: 120px; line-height: 44px; height: 100%; background-color: #ddd; font-size: 16px; color: #fff; cursor: pointer;}
+.shopcart_bottom .td_sum {margin-left: 10px;}
+.shopcart_bottom .td_sum_value {font-size: 20px;}
+
+/*订单信息*/
+.orderinfo_wrap {width: 1122px;}
+.orderinfo_tit {height: 72px; line-height: 72px; font-size: 16px;}
+.orderinfo_address {}
+.orderinfo_address li {position: relative; float: left; width: 239px; height: 160px; margin: 0 0 44px 55px; background: url(../images/address_default.png) no-repeat 0 0; background-size: 239px;}
+.orderinfo_address li:nth-child(1) {margin-left: 0;}
+.orderinfo_address li:nth-child(5) {margin-left: 0;}
+.orderinfo_address li.first {margin-left: 0;}
+.orderinfo_address li .name {width: 200px; margin: 0 auto; font-size: 14px; color: #000; padding: 16px 0 12px; border-bottom: 1px solid #ddd; }
+.orderinfo_address li p {width: 200px; margin: 0 auto; color: #999; line-height: 20px; padding: 8px 0;}
+.orderinfo_address li .pos {position: absolute; width: 100%; bottom: -44px; cursor: pointer;}
+.orderinfo_address li .pos span {float: left; width: 50%; height: 48px; line-height: 48px; font-size: 14px;  text-align: center;}
+.orderinfo_address li:hover {background: url(../images/address_hover.png) no-repeat 0 0; background-size: 239px;}
+.orderinfo_address li.address_active {background: url(../images/address_active.png) no-repeat 0 0; background-size: 239px;}
+
+.add_address {padding: 30px 66px; background-color: #fbfbfb;}
+.add_address div {overflow: hidden; font-size: 14px; color: #666; margin-bottom: 20px;}
+.add_address div label {float: left; width: 80px; height: 28px; line-height: 28px; text-align: right; margin-right: 7px;}
+.add_address div input {float: left; width: 250px; height: 28px;}
+.add_address div.set_default input {width: 16px; height: 16px; margin-top: 2px; margin-right: 5px; cursor: pointer;}
+.add_address div textarea {float: left; width: 890px; height: 68px; overflow:hidden; resize:none;}
+.add_address div.btn span {float: left; width: 90px; height: 30px; background-color: #ff1616; text-align: center; line-height: 30px; color: #fff;}
+.add_address div.btn span.left {background-color: #ff1616; cursor: pointer;}
+.add_address div.btn span.right {background-color: #0795d1; margin-left: 45px; cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
