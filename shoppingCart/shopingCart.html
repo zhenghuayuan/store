@@ -10,15 +10,15 @@
 	<div class="wrap">
 		<div class="header_wrap">
 			<div class="header wrap_center clearfix">
-				<div class="header_logo"><img src="../../lib/test.png"></div>
+				<div class="header_logo"><img src="../test.png"></div>
 				<div class="header_progress">
 					<div class="progress">
 						<!-- 背景色bg_red -->
 						<span class="bg_red">1</span>
-						<span class="bg_red">2</span>
+						<span class="">2</span>
 						<span class=""></span>
-						<!-- 进度值 -103px 197px 100%-->
-						<i style="width: 197px"></i>
+						<!-- 进度值 103px 197px 100%-->
+						<i style="width: 103px"></i>
 					</div>
 					<ul>
 						<li>购物车</li>
@@ -29,12 +29,12 @@
 
 			</div>
 		</div>
-		<div class="content wrap_center">
+		<div class="wrap_center">
 			<div class="shopcart_name">我的购物车</div>
 			<div class="shopcart_wrap">
 
 				<div class="shopcart_tit clearfix">
-					<div class="td_chk check_default check_active">全选</div>
+					<div class="td_chk check_default">全选</div>
 					<div class="td_gds">商品</div>
 					<div class="td_info tl">属性</div>
 					<div class="td_prc">单价</div>
@@ -45,18 +45,41 @@
 				
 				<div class="shopcart_content">
 					<div class="store_wrap">
-						<div class="store_name check_default check_active">店铺：艾利美旗舰店</div>
-						<ul class="">
+						<div class="store_name">
+							<span class="check_default"></span>店铺：艾利美旗舰店
+						</div>
+						<ul>
 							<li class="store_goods clearfix">
 								<div class="td_chk check_default"></div>
-								<div class="td_pic"><img src="../../lib/test.png" alt=""></div>
+								<div class="td_pic"><img src="../test.png" alt=""></div>
 								<div class="td_name tl">017春秋新款宽松休闲百搭双排扣风衣长款薄外套女</div>
 								<div class="td_info tl">27寸</div>
-								<div class="td_prc red">￥64.10</div>
+								<div class="td_prc red">￥<span>64.10</span></div>
 								<div class="td_num">3</div>
 								<div class="td_sum red">￥64.10</div>
 								<div class="td_opt">删除</div>
 							</li>
+							<li class="store_goods clearfix">
+								<div class="td_chk check_default"></div>
+								<div class="td_pic"><img src="../test.png" alt=""></div>
+								<div class="td_name tl">017春秋新款宽松休闲百搭双排扣风衣长款薄外套女</div>
+								<div class="td_info tl">27寸</div>
+								<div class="td_prc red">￥<span>64.10</span></div>
+								<div class="td_num">3</div>
+								<div class="td_sum red">￥64.10</div>
+								<div class="td_opt">删除</div>
+							</li>
+							<li class="store_goods clearfix">
+								<div class="td_chk check_default"></div>
+								<div class="td_pic"><img src="../test.png" alt=""></div>
+								<div class="td_name tl">017春秋新款宽松休闲百搭双排扣风衣长款薄外套女</div>
+								<div class="td_info tl">27寸</div>
+								<div class="td_prc red">￥<span>64.10</span></div>
+								<div class="td_num">3</div>
+								<div class="td_sum red">￥64.10</div>
+								<div class="td_opt">删除</div>
+							</li>
+
 						</ul>
 						<div class="tipls clearfix">
 							<div class="left">送货信息：</div>
@@ -67,15 +90,18 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="store_wrap">
-						<div class="store_name check_default check_active">店铺：艾利美旗舰店</div>
-						<ul class="">
+						<div class="store_name">
+							<span class="check_default"></span>店铺：艾利美旗舰店
+						</div>
+						<ul>
 							<li class="store_goods clearfix">
 								<div class="td_chk check_default"></div>
-								<div class="td_pic"><img src="../../lib/test.png" alt=""></div>
+								<div class="td_pic"><img src="../test.png" alt=""></div>
 								<div class="td_name tl">017春秋新款宽松休闲百搭双排扣风衣长款薄外套女</div>
 								<div class="td_info tl">27寸</div>
-								<div class="td_prc red">￥64.10</div>
+								<div class="td_prc red">￥<span>64.10</span></div>
 								<div class="td_num">3</div>
 								<div class="td_sum red">￥64.10</div>
 								<div class="td_opt">删除</div>
@@ -90,13 +116,13 @@
 							</div>
 						</div>
 					</div>
-					
+
 					<!--  -->
 					<div class="shopcart_bottom clearfix">
 						<div class="td_chk check_default">全选</div>
 						<div class="td_opt">删除</div>
-						<div class="td_confirm fr bg_red">提交订单</div>
-						<div class="fr red td_sum_value">￥3521.10</div>
+						<div class="td_confirm fr bg_red">下一步</div>
+						<div class="fr red td_sum_value">￥<span>0</span></div>
 						<div class="fr td_sum">总计：</div>
 						<div class="fr td_num">共<span class="red">8</span>款商品</div>
 					</div>
@@ -107,6 +133,108 @@
 		</div>		
 	</div>
 	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script>
+		// 购物车全选
+		$(".shopcart_tit, .shopcart_bottom").click(function(){
+			var $list = $(".store_goods")
+			if (isHasAcitve($list)) {
+				$(".store_goods").each(function(index, item){
+					$(item).find(".td_chk").addClass("check_active")
+				})
+				$(".store_name").find("span").addClass("check_active")
+				$(".shopcart_tit, .shopcart_bottom").find(".td_chk").addClass("check_active")
+			}else{
+				$(".store_goods").each(function(index, item){
+					$(item).find(".td_chk").removeClass("check_active")
+				})
+				$(".store_name").find("span").removeClass("check_active")
+				$(".shopcart_tit, .shopcart_bottom").find(".td_chk").removeClass("check_active")
+			}
+			initSumPrice()
+		})
 
+		// 店铺全选
+		$(".store_name").on("click", "span", function(){
+			var $list = $(this).parent().siblings("ul").find("li")
+			if (isHasAcitve($list)) {
+				$list.each(function(index, item){
+					$(item).find(".td_chk").addClass("check_active")
+				})
+				$(this).addClass("check_active")
+			}else{
+				$list.each(function(index, item){
+					$(item).find(".td_chk").removeClass("check_active")
+				})
+				$(this).removeClass("check_active")
+			}
+			initSelect()
+			initSumPrice()
+		})
+		// 
+		$(".store_goods").on("click", ".td_chk", function(){
+			if ($(this).hasClass("check_active")) {
+				$(this).removeClass("check_active")
+			}else{
+				$(this).addClass("check_active")
+			}
+			initSelect()
+			initSumPrice()
+		})
+		// 任意一个选中（true） 全部选中（false） 全部未选中（true）
+		function isHasAcitve($list){
+			var bool = false
+			var length = $list.length
+			var i = 0
+			$list.each(function(index, item){
+				var is = $(item).find(".td_chk").hasClass("check_active")
+				if (is) {
+					bool = true
+					i++
+				}
+			})
+			if (length == i) {
+				bool = false
+			}
+			if (i == 0) {
+				bool = true
+			}
+			return bool
+		}	
+
+		// 初始化全选状态
+		function initSelect(){
+			var $list = $(".store_goods")
+			if (isHasAcitve($list)) {
+				$(".shopcart_tit, .shopcart_bottom").find(".td_chk").removeClass("check_active")
+			}else{
+				$(".shopcart_tit, .shopcart_bottom").find(".td_chk").addClass("check_active")
+			}
+			$(".store_wrap").each(function(index, item){
+				var $list1 = $(item).find("li")
+				if (isHasAcitve($list1)) {
+					$(item).find(".store_name").find("span").removeClass("check_active")
+				}else{
+					$(item).find(".store_name").find("span").addClass("check_active")
+				}
+			})
+		}
+
+		function initSumPrice(){
+			var sumPrice = 0
+			$(".store_wrap").each(function(index, item){
+				var $list = $(item).find("li")
+				$list.each(function(idx, dom){
+					if ($(dom).find(".td_chk").hasClass("check_active")) {
+						var p = parseFloat($(dom).find(".td_prc span").text())
+						var n = parseInt($(dom).find(".td_num").text())
+						sumPrice+= p*n
+					}
+				})
+				$(".shopcart_bottom .td_sum_value").find("span").html(sumPrice)
+			})
+		}
+		initSelect()
+		initSumPrice()
+	</script>
 </body>
 </html>

@@ -10,15 +10,15 @@
 	<div class="wrap">
 		<div class="header_wrap">
 			<div class="header wrap_center clearfix">
-				<div class="header_logo"><img src="../../lib/test.png"></div>
+				<div class="header_logo"><img src="../test.png"></div>
 				<div class="header_progress">
 					<div class="progress">
 						<!-- 背景色bg_red -->
 						<span class="bg_red">1</span>
 						<span class="bg_red">2</span>
 						<span class=""></span>
-						<!-- 进度值 -103px 197px 100%-->
-						<i style="width: 197px"></i>
+						<!-- 进度值 -103px 206px 100%--> 
+						<i style="width: 320px"></i> 
 					</div>
 					<ul>
 						<li>购物车</li>
@@ -35,38 +35,49 @@
 			<ul class="orderinfo_address clearfix">
 				<li class="first address_active">
 					<div class="name">名字名字</div>
-					<p>福建省 厦门市 思明区 软件软二期望海路59号 厦门可到食品<span style="display: block;">18146625991</span></p>
-					<div class="pos">
+					<p>
+						<span class="st_region">福建省 厦门市 思明区 </span>
+						<span class="st_ads">软件软二期望海路59号</span> 
+						<span class="st_name">厦门可到食品1</span>
+						<span class="st_phone" style="display: block;">18146625991</span>
+					</p>
+					<div class="pos visible">
+						<!-- <span>设为默认</span> -->
 						<span>默认地址</span>
 						<span>修改地址</span>
 					</div>
 				</li> 
-				<li class="address_active">
+				<li>
 					<div class="name">名字名字</div>
-					<p>福建省 厦门市 思明区 软件软二期望海路59号 厦门可到食品<span style="display: block;">18146625991</span></p>
+					<p>
+						<span class="st_region">福建省 厦门市 思明区 </span>
+						<span class="st_ads">软件软二期望海路59号</span> 
+						<span class="st_name">厦门可到食品2</span>
+						<span class="st_phone" style="display: block;">18146625991</span>
+					</p>
 					<div class="pos">
+						<!-- <span>设为默认</span> -->
 						<span>默认地址</span>
 						<span>修改地址</span>
 					</div>
 				</li> 
-				<li class="">
+				<li>
 					<div class="name">名字名字</div>
-					<p>福建省 厦门市 思明区 软件软二期望海路59号 厦门可到食品<span style="display: block;">18146625991</span></p>
+					<p>
+						<span class="st_region">福建省 厦门市 思明区 </span>
+						<span class="st_ads">软件软二期望海路59号</span> 
+						<span class="st_name">厦门可到食品3</span>
+						<span class="st_phone" style="display: block;">18146625991</span>
+					</p>
 					<div class="pos">
+						<!-- <span>设为默认</span> -->
 						<span>默认地址</span>
 						<span>修改地址</span>
 					</div>
-				</li>
-				<li class="">
-					<div class="name">名字名字</div>
-					<p>福建省 厦门市 思明区 软件软二期望海路59号 厦门可到食品<span style="display: block;">18146625991</span></p>
-					<div class="pos">
-						<span>默认地址</span>
-						<span>修改地址</span>
-					</div>
-				</li>  
+				</li> 
+				 
 			</ul>
-			<div class="add_address">
+			<div class="add_address none">
 				<div class="add_store_name">
 					<label for="">店名：</label>
 					<input type="text">
@@ -77,19 +88,20 @@
 				</div>
 				<div class="add_phone">
 					<label for="">手机号码：</label>
-					<input type="text">
+					<input type="number">
 				</div>
 				<div class="add_region">
 					<label for="">所在区域：</label>
 					<input type="text">
 				</div>
-				<div class="">
-					<label for="add_ads">详细地址：</label>
+				<div class="add_ads">
+					<label for="">详细地址：</label>
 					<textarea name="" id="" cols="30" rows="10"></textarea>
 				</div>
 				<div class="set_default">
 					<label for="add_detail_ads"></label>
-					<input type="checkbox">
+					<!-- check_active -->
+					<em class="check_default "></em> 
 					<span>设为默认地址</span>
 				</div>
 				<div class="btn">
@@ -104,39 +116,41 @@
 			<div class="shopcart_name" style="background: none;">确认商品信息</div>
 			<div class="shopcart_wrap">
 
-				<div class="shopcart_tit clearfix">
+				<div class="shopcart_tit clearfix" style="border-top: 1px solid #ddd;">
 					<div class="td_chk hidden">全选</div>
 					<div class="td_gds">商品</div>
 					<div class="td_info tl">属性</div>
 					<div class="td_prc">单价</div>
 					<div class="td_num">数量</div>
 					<div class="td_sum">小计（元）</div>
-					<div class="td_opt">操作</div>
+					<div class="td_opt hidden">操作</div>
 				</div>
 				
 				<div class="shopcart_content">
 					<div class="store_wrap">
-						<div class="store_name">店铺：艾利美旗舰店</div>
+						<div class="store_name">
+							<span class="hidden"></span>店铺：艾利美旗舰店
+						</div>
 						<ul class="">
 							<li class="store_goods clearfix">
 								<div class="td_chk"></div>
-								<div class="td_pic"><img src="../../lib/test.png" alt=""></div>
+								<div class="td_pic"><img src="../test.png" alt=""></div>
 								<div class="td_name tl">017春秋新款宽松休闲百搭双排扣风衣长款薄外套女</div>
 								<div class="td_info tl">27寸</div>
 								<div class="td_prc red">￥64.10</div>
 								<div class="td_num">3</div>
 								<div class="td_sum red">￥64.10</div>
-								<div class="td_opt">删除</div>
+								<!-- <div class="td_opt">删除</div> -->
 							</li>
 							<li class="store_goods clearfix">
 								<div class="td_chk"></div>
-								<div class="td_pic"><img src="../../lib/test.png" alt=""></div>
+								<div class="td_pic"><img src="../test.png" alt=""></div>
 								<div class="td_name tl">017春秋新款宽松休闲百搭双排扣风衣长款薄外套女</div>
 								<div class="td_info tl">27寸</div>
 								<div class="td_prc red">￥64.10</div>
 								<div class="td_num">3</div>
 								<div class="td_sum red">￥64.10</div>
-								<div class="td_opt">删除</div>
+								<!-- <div class="td_opt">删除</div> -->
 							</li>
 						</ul>
 						<div class="tipls clearfix">
@@ -146,25 +160,48 @@
 								厦门市湖里区起送价<span class="red">800</span>元（备注信息展示位置）&nbsp;&nbsp;&nbsp;&nbsp;
 								厦门市湖里区起送价<span class="red">800</span>元（备注信息展示位置）
 							</div>
-							<div class="">
-								
+							<div class="bottom clearfix">
+								<div class="rmk">
+									<label for="">备注：</label>
+									<input type="text">
+								</div>
+								<div class="other">
+									<select name="" id="" disabled="disabled">
+										<option value="0">卷一</option>
+										<option value="1">卷二</option>
+										<option value="2">卷三</option>
+									</select>
+									<span>使用代金券</span>
+									<em class="check_default"></em>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="store_wrap">
-						<div class="store_name">店铺：艾利美旗舰店</div>
+						<div class="store_name">
+							<span class="hidden"></span>店铺：艾利美旗舰店
+						</div>
 						<ul class="">
 							<li class="store_goods clearfix">
 								<div class="td_chk"></div>
-								<div class="td_pic"><img src="../../lib/test.png" alt=""></div>
+								<div class="td_pic"><img src="../test.png" alt=""></div>
 								<div class="td_name tl">017春秋新款宽松休闲百搭双排扣风衣长款薄外套女</div>
 								<div class="td_info tl">27寸</div>
 								<div class="td_prc red">￥64.10</div>
 								<div class="td_num">3</div>
 								<div class="td_sum red">￥64.10</div>
-								<div class="td_opt">删除</div>
+								<div class="td_opt hidden">删除</div>
 							</li>
-						
+							<li class="store_goods clearfix">
+								<div class="td_chk"></div>
+								<div class="td_pic"><img src="../test.png" alt=""></div>
+								<div class="td_name tl">017春秋新款宽松休闲百搭双排扣风衣长款薄外套女</div>
+								<div class="td_info tl">27寸</div>
+								<div class="td_prc red">￥64.10</div>
+								<div class="td_num">3</div>
+								<div class="td_sum red">￥64.10</div>
+								<div class="td_opt hidden">删除</div>
+							</li>
 						</ul>
 						<div class="tipls clearfix">
 							<div class="left">送货信息：</div>
@@ -173,24 +210,100 @@
 								厦门市湖里区起送价<span class="red">800</span>元（备注信息展示位置）&nbsp;&nbsp;&nbsp;&nbsp;
 								厦门市湖里区起送价<span class="red">800</span>元（备注信息展示位置）
 							</div>
+							<div class="bottom clearfix">
+								<div class="rmk">
+									<label for="">备注：</label>
+									<input type="text">
+								</div>
+								<div class="other">
+									<select name="" id="" disabled="disabled">
+										<option value="0">卷一</option>
+										<option value="1">卷二</option>
+										<option value="2">卷三</option>
+									</select>
+									<span>使用代金券</span>
+									<em class="check_default"></em>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!--  -->
-					<div class="shopcart_bottom clearfix">
-						<div class="td_chk check_default">全选</div>
-						<div class="td_opt">删除</div>
+					<div class="shopcart_bottom clearfix" style="margin-top: 0;">
+						<div class="td_chk check_default hidden">全选</div>
+						<div class="td_opt hidden">删除</div>
 						<div class="td_confirm fr bg_red">提交订单</div>
 						<div class="fr red td_sum_value">￥3521.10</div>
 						<div class="fr td_sum">总计：</div>
 						<div class="fr td_num">共<span class="red">8</span>款商品</div>
 					</div>
-
 				</div>
 			</div>
 
 		</div>		
 	</div>
 	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script>
+		// 点击选择收货地址
+		$(".orderinfo_address li").on("click", function(event){
+			var bool = $(".add_address").hasClass("none")
+			if (!bool) return
+			$(".orderinfo_address li").each(function(index, item){
+				$(item).removeClass("address_active")
+				$(item).find(".pos").removeClass("visible")
+			})
 
+			$(this).addClass("address_active")
+			$(this).find(".pos").addClass("visible")
+		})
+		// 点击设为默认 和 修改地址
+		$(".orderinfo_address li").on("click", ".pos span", function(){
+			//index 0: 默认地址 || 设为默认  1:修改地址
+			var index = $(this).index() 
+			if (index == 0 && $(this).text() != "默认地址") {
+				console.log("设置默认地址....")
+			}
+			if(index == 1){
+				var bool = $(".add_address").hasClass("none")
+				if (!bool) return
+				var $li = $(this).parents("li")
+				$(".add_address").removeClass("none")
+				$(".add_store_name input").val($li.find(".st_name").text())
+				$(".add_name input").val($li.find(".name").text())
+				$(".add_phone input").val($li.find(".st_phone").text())
+				$(".add_region input").val($li.find(".st_region").text())
+				$(".add_ads textarea").val($li.find(".st_ads").text())
+				$(".set_default em").addClass("check_active")
+			}
+		})
+		// 点击取消 和 保存
+		$(".add_address").on("click", ".btn span", function(){
+			if ($(this).hasClass("left")) {
+				if ($(".add_store_name input").val() == "" ||
+					$(".add_name input").val() == "" ||
+					$(".add_phone input").val() == "" ||
+					$(".add_region input").val() == "" ||
+					$(".add_ads textarea").val() == "") {
+					alert("信息不完整")
+				}else{
+					console.log("校验完成...")
+				}
+			}
+			if ($(this).hasClass("right")) {
+				$(".add_address").addClass("none")
+			}
+		})
+
+		// 点击使用代金券
+		$(".store_wrap").on("click", ".other em", function(){
+			if ($(this).hasClass("check_active")) {
+				$(this).removeClass("check_active")
+				$(this).siblings("select").attr("disabled", "disabled")
+			}else{
+				$(this).addClass("check_active")
+				$(this).siblings("select").removeAttr("disabled")
+			}
+		})
+
+	</script>
 </body>
 </html>
